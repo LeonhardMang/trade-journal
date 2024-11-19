@@ -6,8 +6,10 @@ import { dataMixin } from '@/mixins/dataMixin';
 
 <template>
     <main>
-        <OwnTable :kategories="kategories" :items="sortDate(removeIsSale, 'saleDate')"
-            :searchText="'Suche nach einem Aktiensymbol'" :searchKey="'shareSymbol'" />
+        <div class="container">
+            <OwnTable :kategories="kategories" :items="sortDate(removeIsSale, 'saleDate')"
+                :searchText="'Suche nach einem Aktiensymbol'" :searchKey="'shareSymbol'" />
+        </div>
     </main>
 </template>
 

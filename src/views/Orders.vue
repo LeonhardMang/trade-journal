@@ -7,9 +7,11 @@ import { dataMixin } from '@/mixins/dataMixin';
 
 <template>
     <main>
+        <div class="container">
         <AddOrder @add-order="addOrderToOverview" class="mt-3" />
         <OwnTable :kategories="kategories" :items="sortDate(replaceIsSale, 'tradeDate')"
             :searchText="'Suche nach einem Aktiensymbol'" :searchKey="'shareSymbol'" class="mt-3" />
+        </div>
     </main>
 </template>
 

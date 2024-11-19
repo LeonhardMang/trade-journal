@@ -36,6 +36,7 @@ import { RouterLink, RouterView } from 'vue-router'
 
 <style scoped>
 header {
+  width: 100%;
   line-height: 1.5;
   max-height: 100vh;
 }
@@ -74,7 +75,7 @@ nav a:first-of-type {
   header {
     display: flex;
     place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
+    /* padding-right: calc(var(--section-gap) / 2); */
   }
 
   .logo {
@@ -89,7 +90,6 @@ nav a:first-of-type {
 
   nav {
     text-align: left;
-    margin-left: -1rem;
     font-size: 1rem;
 
     padding: 1rem 0;
